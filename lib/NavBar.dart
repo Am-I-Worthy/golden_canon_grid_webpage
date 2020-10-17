@@ -68,7 +68,8 @@ class _NavBarItemState extends State<NavBarItem> {
           children: [
             AnimatedContainer(
               margin: EdgeInsets.only(bottom: 8.0),
-              duration: Duration(milliseconds: 300),
+              duration: Duration(milliseconds: 200),
+              curve: Curves.easeOut,
               height: height,
               width: widget.selected ? 40.0 : width,
               decoration: BoxDecoration(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:golden_canon_grid_webpage/src/MobilePage.dart';
+import 'package:golden_canon_grid_webpage/src/WebPage.dart';
 
 class TopLeftButton extends StatefulWidget {
   final bool mobilePage;
@@ -34,14 +35,14 @@ class _TopLeftButtonState extends State<TopLeftButton> {
         });
       },
       child: Container(
-        height: widget.mobilePage ? MobilePage.tlbContainerheight : 130.0,
-        width: widget.mobilePage ? MobilePage.tlbContainerWidth : 130.0,
+        height: widget.mobilePage ? MobilePage.tlbContainerheight : WebPage.tlbContainerheight,
+        width: widget.mobilePage ? MobilePage.tlbContainerWidth : WebPage.tlbContainerWidth,
         color: Colors.white,
         child: Stack(
           children: [
             Positioned(
-              top: widget.mobilePage ? MobilePage.tlbContainer1Top : 65.8,
-              left: widget.mobilePage ? MobilePage.tlbContainer1Left : 65.0,
+              top: widget.mobilePage ? MobilePage.tlbContainer1Top : WebPage.tlbContainer1Top,
+              left: widget.mobilePage ? MobilePage.tlbContainer1Left : WebPage.tlbContainer1Left,
               child: AnimatedContainer(
                 duration: Duration(milliseconds: 300),
                 curve: Curves.easeOut,
@@ -52,8 +53,8 @@ class _TopLeftButtonState extends State<TopLeftButton> {
               ),
             ),
             Positioned(
-              top: widget.mobilePage ? MobilePage.tlbContainer2Top : 66.0,
-              left: widget.mobilePage ? MobilePage.tlbContainer2Left : 61.0,
+              top: widget.mobilePage ? MobilePage.tlbContainer2Top : WebPage.tlbContainer2Top,
+              left: widget.mobilePage ? MobilePage.tlbContainer2Left : WebPage.tlbContainer2Left,
               child: AnimatedContainer(
                 duration: Duration(milliseconds: 300),
                 curve: Curves.easeOut,
@@ -64,8 +65,8 @@ class _TopLeftButtonState extends State<TopLeftButton> {
               ),
             ),
             Positioned(
-              top: widget.mobilePage ? MobilePage.tlbContainer3Top : 63.8,
-              left: widget.mobilePage ? MobilePage.tlbContainer3Left : 63.0,
+              top: widget.mobilePage ? MobilePage.tlbContainer3Top : WebPage.tlbContainer3Top,
+              left: widget.mobilePage ? MobilePage.tlbContainer3Left : WebPage.tlbContainer3Left,
               child: Container(
                 height: 3.0,
                 width: 3.0,
